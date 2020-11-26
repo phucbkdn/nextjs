@@ -1,12 +1,6 @@
 import Head from 'next/head'
-import { useRouter } from 'next/router'
+
 export default function Home({ data }) {
-  const router = useRouter()
-
-  if(router.isFallback) {
-    return <div>Loading...</div>
-  }
-
   return (
     <div className="container">
       <Head>
@@ -56,7 +50,8 @@ export default function Home({ data }) {
 
       <footer>
         <a
-          href="/home"
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
@@ -213,16 +208,6 @@ export default function Home({ data }) {
   )
 }
 
-export async function getStaticPaths() {
-  return {
-    // Only `/posts/1` and `/posts/2` are generated at build time
-    paths: [{ params: { id: '1' } }, { params: { id: '2' } }],
-    // Enable statically generating additional pages
-    // For example: `/posts/3`
-    fallback: true,
-  }
-}
-
 export async function getStaticProps() {
   const res = await fetch('http://postgres-graphql-training.herokuapp.com')
   const data = await res.json()
@@ -232,4 +217,3 @@ export async function getStaticProps() {
     }
   }
 }
-
