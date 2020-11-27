@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "next build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d .next/server/pages"
   },
   "homepage": "https://phucla-agilityio.github.io/nextjs",
   "dependencies": {
