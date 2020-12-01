@@ -164,13 +164,6 @@ function Home({
   }, "Learn \u2192"), __jsx("p", {
     className: "jsx-1799183244"
   }, "Learn about Next.js in an interactive course with quizzes!")), __jsx("a", {
-    href: "https://github.com/vercel/next.js/tree/master/examples",
-    className: "jsx-1799183244" + " " + "card"
-  }, __jsx("h3", {
-    className: "jsx-1799183244"
-  }, "Examples \u2192"), __jsx("p", {
-    className: "jsx-1799183244"
-  }, "Discover and deploy boilerplate example Next.js projects.")), __jsx("a", {
     href: "https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
     className: "jsx-1799183244" + " " + "card"
   }, __jsx("h3", {
